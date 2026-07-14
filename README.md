@@ -158,8 +158,8 @@ Made Space News was created as an experimental interface prototype for spatial r
 
 Project contributors:
 
-- **Yiru Chen** — project lead, product direction, interface design, and prototype development
 - **Justin Le**
 - **Shreshta Ranganathan**
 - **Vanessa Y Wang**
 - **Zhenyao Wang**
+- **Yiru Chen**
