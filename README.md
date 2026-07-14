@@ -154,4 +154,12 @@ Current prototype capabilities include:
 
 ## Credits
 
-Designed and rebuilt as an experimental interface prototype for Made Space News, with a focus on spatial reading, personal curation, and Brown & RISD-oriented discovery.
+Made Space News was created as an experimental interface prototype for spatial reading, personal curation, and Brown & RISD-oriented discovery.
+
+Project contributors:
+
+- **Yiru Chen** — project lead, product direction, interface design, and prototype development
+- **Justin Le**
+- **Shreshta Ranganathan**
+- **Vanessa Y Wang**
+- **Zhenyao Wang**
