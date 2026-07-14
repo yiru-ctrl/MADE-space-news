@@ -1,0 +1,41 @@
+.dot-grid-background {
+  --dot-x: 50vw;
+  --dot-y: 50vh;
+  --dot-shift-x: 0px;
+  --dot-shift-y: 0px;
+  overflow: hidden;
+  background-color: var(--background);
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 7%, transparent) .7px,
+    transparent .85px
+  );
+  background-size: 20px 20px;
+}
+
+.dot-grid-hover {
+  position: absolute;
+  inset: -6px;
+  opacity: 0;
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 17%, transparent) .85px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  background-position: var(--dot-shift-x) var(--dot-shift-y);
+  mask-image: radial-gradient(circle 105px at var(--dot-x) var(--dot-y), #000 0%, rgba(0,0,0,.72) 42%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle 105px at var(--dot-x) var(--dot-y), #000 0%, rgba(0,0,0,.72) 42%, transparent 100%);
+  transition: opacity 220ms ease, background-position 180ms ease-out;
+  will-change: opacity, background-position, mask-image;
+}
+
+.dot-grid-background.is-active .dot-grid-hover { opacity: .72; }
+
+@media (hover: none), (pointer: coarse) {
+  .dot-grid-hover { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot-grid-hover { display: none; }
+}
